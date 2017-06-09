@@ -84,6 +84,8 @@ namespace WindowsFormsApplication1
             {
                 resultado.Text += apellido[counter - 1];
             }
+
+            resultado.Text += " 201504475";
         }
 
         private void regla3_Click(object sender, EventArgs e)
