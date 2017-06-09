@@ -39,7 +39,28 @@ namespace WindowsFormsApplication1
 
         private void vocales_Click(object sender, EventArgs e)
         {
-            
+            resultado.Text = "";
+            error.Text = "";
+
+            string palabra = input1.Text.Trim();
+
+            if ((palabra.Contains("a") || palabra.Contains("á") || palabra.Contains("A")
+                || palabra.Contains("Á"))
+                && (palabra.Contains("e") || palabra.Contains("é") || palabra.Contains("E")
+                || palabra.Contains("É"))
+                && (palabra.Contains("i") || palabra.Contains("í") || palabra.Contains("I")
+                || palabra.Contains("Í"))
+                && (palabra.Contains("o") || palabra.Contains("ó") || palabra.Contains("O")
+                || palabra.Contains("Ó"))
+                && (palabra.Contains("u") || palabra.Contains("ú") || palabra.Contains("U")
+                || palabra.Contains("Ú")))
+            {
+                resultado.Text = "Cumple";
+            }
+            else
+            {
+                resultado.Text = "No Cumple";
+            }
         }
 
         private void inversor_Click(object sender, EventArgs e)
