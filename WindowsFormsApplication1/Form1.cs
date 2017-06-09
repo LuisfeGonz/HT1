@@ -88,7 +88,24 @@ namespace WindowsFormsApplication1
 
         private void regla3_Click(object sender, EventArgs e)
         {
-            
+            resultado.Text = "";
+            error.Text = "";
+
+            try
+            {
+                double A = Convert.ToDouble(input1.Text);
+                double X = Convert.ToDouble(input2.Text);
+                double B = Convert.ToDouble(input3.Text);
+
+                double Y = (B * X / A);
+
+                resultado.Text = Y.ToString();
+            }
+            catch (Exception ex)
+            {
+                error.Text = "Error: " + ex;
+                resultado.Text = "";
+            }
         }
     }
 }
