@@ -1,0 +1,21 @@
+1.- ¿Qué entiende como "commit"?
+		Un commit es una actualización que se realizó en el repositorio
+		y se desea almacenar posteriormente de manera remota.
+
+2.- ¿Qué entiende como "merge"?
+		La función merge permite fusionar los cambios de todas las ramas
+		y agregarlos a la master.
+
+3.- ¿Cuál es la diferencia entre "Pull" y "Push"?
+		La función push sirve para cargar los cambios realizados en el
+		repositorio mientras que la función pull sirve para lo contrario,
+		es decir, para descargar las actualizaciones que se encuentran
+		en alguna rama ajena a una propia.
+
+4.- ¿Cómo utilizar ramas ("branches") en la aplicación?
+		Al crear un repositorio, por defecto, se crea una rama llamada
+		¨master¨, que es la rama definitiva del repositorio. Se puede
+		crear más ramas, con función de subdividir las tareas o algo
+		similar, pero que al final se realiza una fusión (¨merge¨) que
+		traslada las actividades de las ramas alternativas a la master,
+		unificando todo el proyecto. 
