@@ -65,7 +65,25 @@ namespace WindowsFormsApplication1
 
         private void inversor_Click(object sender, EventArgs e)
         {
-            
+            resultado.Text = "";
+            error.Text = "";
+
+            string nombre = input1.Text;
+            string apellido = input2.Text;
+
+            int counter;
+
+            for (counter = nombre.Length; counter > 0; counter--)
+            {
+                resultado.Text += nombre[counter - 1];
+            }
+
+            resultado.Text += " ";
+
+            for (counter = apellido.Length; counter > 0; counter--)
+            {
+                resultado.Text += apellido[counter - 1];
+            }
         }
 
         private void regla3_Click(object sender, EventArgs e)
